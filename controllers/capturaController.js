@@ -1,6 +1,6 @@
 const capturaController = {
-  index: (req, res) => {
-    return res.render(captura);
+  get: (req, res) => {
+    return res.render("captura", { title: "Captura" });
   },
 };
 

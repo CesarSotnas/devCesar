@@ -1,6 +1,6 @@
 const calcController = {
-  index: (req, res) => {
-    return res.send(calc);
+  get: (req, res) => {
+    return res.render("calc", { title: "Calculadora" });
   },
 };
 

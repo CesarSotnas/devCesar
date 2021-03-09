@@ -1,6 +1,6 @@
 const projetosController = {
-  index: (req, res) => {
-    return res.render(projetos);
+  get: (req, res) => {
+    return res.render("projetos", { title: "Projetos" });
   },
 };
 

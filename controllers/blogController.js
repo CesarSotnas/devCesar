@@ -1,6 +1,6 @@
 const blogController = {
-  index: (req, res) => {
-    return res.sender(blog);
+  get: (req, res) => {
+    return res.render("blog", { title: "Blog" });
   },
 };
 
