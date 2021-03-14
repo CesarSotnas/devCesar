@@ -10,6 +10,7 @@ var blogRouter = require("./routes/blog");
 var capturaRouter = require("./routes/captura");
 var projetosRouter = require("./routes/projetos");
 var calcRouter = require("./routes/calc");
+var getPostRouter = require("./routes/getPost");
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use("/blog", blogRouter);
 app.use("/captura", capturaRouter);
 app.use("/projetos", projetosRouter);
 app.use("/calc", calcRouter);
+app.use("/getPost", getPostRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

@@ -6,39 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Pitagoras</title>
   </head>
-  <link rel="stylesheet" href="stylesheets/header.css" />
-  <link rel="stylesheet" href="stylesheets/calc.css" />
-
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-    crossorigin="anonymous"
-  />
-  <script src="javascripts/menu.js"></script>
-  <!-- JavaScript Bundle with Popper -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://kit.fontawesome.com/46a78f8097.js"
-    crossorigin="anonymous"
-  ></script>
-  <!--Script do códico da calculadora-->
-  <script src="javascripts/calc.js"></script>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Menu</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="/">Contato</a>
-          <a href="projetos">Projetos</a>
-          <a href="blog">Blog</a>
-        </div>
-      </div>
-    </nav>
+    <%- include("./partials/header") %>
     <div class="calculadora" id="calculo">
       <h1 class="texto">Deixe em branco onde deseja saber o resultado:</h1>
       <input type="input" id="hipotenusa" placeholder="Hipotenusa" /><br />
@@ -47,5 +16,28 @@
       <button class="botao" onclick="medidaHipotenusa();">Calcular</button>
       <input type="input" id="result" />
     </div>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="stylesheets/header.css" />
+    <link rel="stylesheet" href="stylesheets/calc.css" />
+
+    <!-- JavaScript Bootstrap -->
+    <script src="javascripts/menu.js"></script>
+    <script src="javascripts/calc.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/46a78f8097.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
   </body>
 </html>
